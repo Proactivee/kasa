@@ -6,8 +6,6 @@ const HeaderContainer = styled.header`
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
-  margin-left: 100px;
-  margin-right: 100px;
 `
 const StyledLink = styled(Link)`
   font-weight: 500;

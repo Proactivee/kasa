@@ -2,13 +2,12 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const StyledLink = styled(Link)`
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  margin-right: 10%;
+  font-size: 18px;
   text-decoration: none;
-  color: #ff6060;
+  text-align: center;
+  margin: 182px;
+  display: block;
 
   &:hover {
     text-decoration: underline;
