@@ -19,6 +19,7 @@ const Back = styled.img`
   top: -270px;
   width: 100%;
   height: 223px;
+  border-radius: 25px;
 `
 const Title = styled.h1`
   font-size: 48px;
@@ -40,13 +41,6 @@ const CardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
 `
-/*const LogementContainer = styled(Link)`
-  background: #7e7edf;
-  height: 340px;
-  width: 340px;
-  border-radius: 10px;
-  margin: 25px;
-`*/
 
 function Home() {
   return (
@@ -57,7 +51,7 @@ function Home() {
       <CardContainer>
         {LogementList.map(({ id, cover, title }) => (
           <div key={id}>
-            <CardCover cover={cover} title={title} />
+            <CardCover id={id} cover={cover} title={title} />
           </div>
         ))}
       </CardContainer>

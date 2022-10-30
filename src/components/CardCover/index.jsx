@@ -23,7 +23,7 @@ const TitleCover = styled.p`
 
 function CardCover({ id, cover, title }) {
   return (
-    <LogementContainer>
+    <LogementContainer to={`/logement/${id}`}>
       <CoverImg src={cover} alt={title} />
       <TitleCover>{title}</TitleCover>
     </LogementContainer>
