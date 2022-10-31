@@ -30,18 +30,18 @@ const WindowContainer = styled.div`
   margin-left: 108px;
   margin-right: 108px;
 `
-const Container = styled.div`
-  padding: -10px;
-`
+const Container = styled.div``
 
 function FiabWindow() {
   const [windowOpen, setWindowOpen] = useState(true)
 
   return windowOpen ? (
-    <WindowContainer>
-      <h3>Fiabilité</h3>
-      <Arrow src={arrowUp} alt="arrow" onClick={() => setWindowOpen(false)} />
-    </WindowContainer>
+    <Container>
+      <WindowContainer>
+        <h3>Fiabilité</h3>
+        <Arrow src={arrowUp} alt="arrow" onClick={() => setWindowOpen(false)} />
+      </WindowContainer>
+    </Container>
   ) : (
     <Container>
       <WindowContainer>

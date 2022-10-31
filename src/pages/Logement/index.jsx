@@ -4,14 +4,14 @@ import styled from 'styled-components'
 import Tags from '../../components/Tags'
 import EquipmentsWindow from '../../components/WindowCollapse/EquipmentsWindow'
 import DescriptionWindow from '../../components/WindowCollapse/DescriptionWindow'
+import StarsRate from '../../components/StarsRate'
+import ImageSlide from '../../components/ImageSlide'
 
 const LogementContainer = styled.div`
   padding: 20px;
 `
-const PresentationContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-`
+const PresentationContainer = styled.div``
+
 const IdPhoto = styled.img`
   width: 64px;
   height: 64px;
@@ -22,7 +22,7 @@ const IdData = styled.div`
   margin-top: 22px;
 `
 const IdName = styled.h4`
-  max-width: 93px;
+  max-width: 88px;
   text-align: right;
   line-height: 25px;
   margin-top: 8px;
@@ -31,12 +31,17 @@ const IdName = styled.h4`
 const LocalTitle = styled.h4`
   margin-top: -20px;
 `
-const TagRate = styled.div``
 
 const Windows = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+`
+const IdStars = styled.div``
+
+const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
 `
 
 function Logement() {
@@ -57,29 +62,32 @@ function Logement() {
       {LgmtArray.map(
         ({
           id,
-          cover,
+          pictures,
           title,
           location,
           host,
           tags,
           description,
           equipments,
+          rating,
         }) => (
           <div key={id}>
             <LogementContainer>
-              <PresentationContainer>
-                <div>
+              <ImageSlide pictures={pictures} />
+              <Container>
+                <PresentationContainer>
                   <h2>{title}</h2>
                   <LocalTitle>{location}</LocalTitle>
-                </div>
-                <IdData>
-                  <IdName>{host.name}</IdName>
-                  <IdPhoto src={host.picture} alt="identité" />
-                </IdData>
-              </PresentationContainer>
-              <TagRate>
-                <Tags tags={tags} />
-              </TagRate>
+                  <Tags tags={tags} />
+                </PresentationContainer>
+                <IdStars>
+                  <IdData>
+                    <IdName>{host.name}</IdName>
+                    <IdPhoto src={host.picture} alt="identité" />
+                  </IdData>
+                  <StarsRate rating={rating} />
+                </IdStars>
+              </Container>
               <Windows>
                 <DescriptionWindow description={description} />
                 <EquipmentsWindow equipments={equipments} />

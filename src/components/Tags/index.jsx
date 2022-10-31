@@ -11,8 +11,8 @@ const ObjectTag = styled.p`
   border-radius: 10px;
   font-size: 14px;
   font-weight: 500;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 `
 
 const DisplayTag = styled.div`
