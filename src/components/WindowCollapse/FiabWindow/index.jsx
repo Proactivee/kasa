@@ -16,6 +16,10 @@ const DataWindow = styled.p`
   font-weight: 400;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  @media (max-width: 768px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 `
 
 const WindowContainer = styled.div`
@@ -29,6 +33,10 @@ const WindowContainer = styled.div`
   padding-bottom: 7.4px;
   margin-left: 108px;
   margin-right: 108px;
+  @media (max-width: 768px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 `
 const Container = styled.div``
 

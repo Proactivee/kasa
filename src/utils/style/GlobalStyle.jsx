@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 
 const StyledGlobal = createGlobalStyle`
+
+
 *{
     font-family: 'Montserrat', Helvetica, sans-serif;
     color: #ff6060;
@@ -13,6 +15,10 @@ html {
   padding:0px;
   margin-left:100px;
   margin-right:100px;
+  @media (max-width:768px){
+    margin:20px;
+    margin-bottom:-20px;
+  }
 }body {
   margin: 0;
   min-height:100%
@@ -26,9 +32,22 @@ textarea {
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
+h1{
+  font-size:51px;
+  font-weight:500;@media (max-width: 768px) {
+    font-size:26px;
+  }
+}
 h2{
-  font-size:36px;
+  font-size:51px;
   font-weight:500;
+  margin-top:20px;
+  margin-bottom:15px;
+  margin-right:0px;
+  max-width:900px;
+  @media (max-width: 768px) {
+    font-size:26px;
+  }
 }
 h3{
   color:white;
@@ -37,7 +56,7 @@ h3{
   margin:0;
   font-weight: 500;
 }h4{
-  font-size:18px;
+  font-size:26px;
   font-weight:500;
 }footer{
   margin-bottom:-25px;

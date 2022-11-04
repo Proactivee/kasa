@@ -15,6 +15,11 @@ const DataWindow = styled.p`
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   margin-left: 38px;
+  font-size: 26px;
+  @media (max-width: 768px) {
+    margin-left: 0px;
+    font-size: 17px;
+  }
 `
 
 const WindowContainer = styled.div`
@@ -28,14 +33,28 @@ const WindowContainer = styled.div`
   padding-bottom: 7.4px;
   margin-left: 38px;
   height: 40px;
+  @media (max-width: 768px) {
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 `
 const Title = styled.h4`
   color: white;
   padding-top: 12px;
   margin: 0px;
+  font-weight: 500px;
+  font-size: 20px;
+  @media (max-width: 768px) {
+    font-size: 19px;
+    padding-top: 10px;
+  }
 `
 const Container = styled.div`
   width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 function EquipmentsWindow({ equipments }) {

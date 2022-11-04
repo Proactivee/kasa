@@ -6,7 +6,9 @@ const StyledLink = styled(Link)`
   font-size: 18px;
   text-decoration: none;
   text-align: center;
-  margin: 182px;
+  margin-top: 180px;
+  margin-bottom: 180px;
+  white-space: nowrap;
   display: block;
 
   &:hover {
@@ -23,6 +25,10 @@ const Error404 = styled.div`
   font-size: 288px;
   margin-top: 80px;
   padding: 0px;
+  @media (max-width: 768px) {
+    font-size: 96px;
+    margin-top: 200px;
+  }
 `
 
 function Error() {
@@ -30,7 +36,7 @@ function Error() {
     <div>
       <ContainerError>
         <Error404>404</Error404>
-        <h2>Oups! La page que vous demandez n'existe pas.</h2>
+        <h1>Oups! La page que vous demandez n'existe pas.</h1>
         <StyledLink to="/">Retourner sur la page d'acceuil</StyledLink>
       </ContainerError>
     </div>

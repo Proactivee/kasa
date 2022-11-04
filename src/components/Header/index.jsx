@@ -6,6 +6,9 @@ const HeaderContainer = styled.header`
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    margin-top: 0px;
+  }
 `
 const StyledLink = styled(Link)`
   font-weight: 500;
@@ -14,21 +17,29 @@ const StyledLink = styled(Link)`
   text-decoration: none;
   margin-left: 57px;
   margin-top: 17px;
-
   white-space: nowrap;
   &:hover {
     text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    margin-left: 10px;
+    font-size: 17px;
   }
 `
 const Navig = styled.nav`
   display: flex;
   justify-content: right;
 `
+const LogoImg = styled.img`
+  @media (max-width: 768px) {
+    height: 47px;
+  }
+`
 
 function Header() {
   return (
     <HeaderContainer>
-      <img src={logoPic} alt="logo" />
+      <LogoImg src={logoPic} alt="logo" />
       <Navig>
         <StyledLink to="/">Accueil</StyledLink>
         <StyledLink to="/about"> A Propos </StyledLink>

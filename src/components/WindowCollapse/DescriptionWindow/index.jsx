@@ -13,9 +13,14 @@ const DataWindow = styled.p`
   margin-top: -31px;
   margin-right: 38px;
   font-weight: 400;
+  font-size: 26px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   align-items: stretch;
+  @media (max-width: 768px) {
+    margin-right: 0px;
+    font-size: 17px;
+  }
 `
 
 const WindowContainer = styled.div`
@@ -29,14 +34,28 @@ const WindowContainer = styled.div`
   padding-bottom: 7.4px;
   margin-right: 38px;
   height: 40px;
+  @media (max-width: 768px) {
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 `
 const Title = styled.h4`
   color: white;
   padding-top: 12px;
+  font-weight: 500px;
   margin: 0px;
+  font-size: 20px;
+  @media (max-width: 768px) {
+    font-size: 19px;
+    padding-top: 10px;
+  }
 `
 const Container = styled.div`
   width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 function DescriptionWindow({ description }) {

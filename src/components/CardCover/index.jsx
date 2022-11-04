@@ -10,6 +10,11 @@ const CoverImg = styled.img`
   width: 340px;
   border-radius: 10px;
   margin: 25px;
+  @media (max-width: 768px) {
+    height: 95%;
+    width: 100%;
+    margin: 0px;
+  }
 `
 const TitleCover = styled.p`
   color: white;

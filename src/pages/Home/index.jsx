@@ -13,6 +13,11 @@ const ImageBack = styled.img`
   object-fit: fill;
   margin-top: 63px;
   margin-bottom: 43px;
+  @media (max-width: 768px) {
+    height: 111px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
 `
 const Back = styled.img`
   position: relative;
@@ -20,6 +25,10 @@ const Back = styled.img`
   width: 100%;
   height: 223px;
   border-radius: 25px;
+  @media (max-width: 768px) {
+    height: 111px;
+    top: -116px;
+  }
 `
 const Title = styled.h1`
   font-size: 48px;
@@ -28,6 +37,13 @@ const Title = styled.h1`
   position: relative;
   top: -450px;
   text-align: center;
+  @media (max-width: 768px) {
+    font-size: 24px;
+    top: -220px;
+    left: 16px;
+    width: 200px;
+    text-align: left;
+  }
 `
 const CardContainer = styled.div`
   background: #f7f7f7;
@@ -40,6 +56,13 @@ const CardContainer = styled.div`
   padding-bottom: 31px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  @media (max-width: 768px) {
+    margin-top: -200px;
+    background: white;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 `
 
 function Home() {

@@ -5,6 +5,10 @@ const FooterContain = styled.footer`
   background-color: black;
   margin-left: -100px;
   margin-right: -100px;
+  @media (max-width: 768px) {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
 `
 const LogoKasa = styled.img`
   color: white;
