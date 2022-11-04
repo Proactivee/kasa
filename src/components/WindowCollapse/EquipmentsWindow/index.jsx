@@ -7,7 +7,7 @@ const Arrow = styled.img`
   object-fit: none;
   padding-right: 16px;
 `
-const DataWindow = styled.p`
+const DataWindow = styled.div`
   background: #f6f6f6;
   padding: 20px;
   margin-top: -31px;
@@ -60,8 +60,9 @@ const Container = styled.div`
 function EquipmentsWindow({ equipments }) {
   const [windowOpen, setWindowOpen] = useState(true)
   let equipement = []
+
   for (let equip of equipments) {
-    equipement.push(<p>{equip}</p>)
+    equipement.push(<p key={equip}>{equip}</p>)
   }
 
   return windowOpen ? (
