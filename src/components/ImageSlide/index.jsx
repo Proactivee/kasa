@@ -82,21 +82,6 @@ function ImageSlide({ pictures }) {
     setIndex(NextSlide)
   }
 
-  /*const SlideContainer = styled.div`
-    //background-image: url(${pictures[index]});
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    justify-content: center;
-    border-radius: 25px;
-    height: 415px;
-    display: flex;
-    justify-content: space-between;
-    @media (max-width: 768px) {
-      height: 255px;
-    }
-  `*/
-
   return (
     <Container>
       <SlideContainer style={{ backgroundImage: `url(${pictures[index]})` }}>
@@ -114,7 +99,7 @@ function ImageSlide({ pictures }) {
         />
       </SlideContainer>
       <Count>
-        {index + 1}/{pictures.length + 1}
+        {index + 1}/{pictures.length}
       </Count>
     </Container>
   )
