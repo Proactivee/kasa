@@ -53,6 +53,19 @@ const Container = styled.div`
   text-align: center;
   position: relative;
 `
+const SlideContainer = styled.div`
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  justify-content: center;
+  border-radius: 25px;
+  height: 415px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    height: 255px;
+  }
+`
 
 function ImageSlide({ pictures }) {
   const [index, setIndex] = useState(0)
@@ -69,8 +82,8 @@ function ImageSlide({ pictures }) {
     setIndex(NextSlide)
   }
 
-  const SlideContainer = styled.div`
-    background-image: url(${pictures[index]});
+  /*const SlideContainer = styled.div`
+    //background-image: url(${pictures[index]});
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -82,11 +95,11 @@ function ImageSlide({ pictures }) {
     @media (max-width: 768px) {
       height: 255px;
     }
-  `
+  `*/
 
   return (
     <Container>
-      <SlideContainer>
+      <SlideContainer style={{ backgroundImage: `url(${pictures[index]})` }}>
         <LeftArrows src={LeftArrow} alt="left-arrow" onClick={Previous} />
         <SmallArrowLef
           src={SmallArrowLeft}
