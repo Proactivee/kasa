@@ -81,8 +81,18 @@ function ImageSlide({ pictures }) {
     const NextSlide = LastSlideImage ? 0 : index + 1
     setIndex(NextSlide)
   }
+  const OnePicture = pictures.length === 1
 
-  return (
+  return OnePicture ? (
+    <Container>
+      <SlideContainer
+        style={{ backgroundImage: `url(${pictures[index]})` }}
+      ></SlideContainer>
+      <Count>
+        {index + 1}/{pictures.length}
+      </Count>
+    </Container>
+  ) : (
     <Container>
       <SlideContainer style={{ backgroundImage: `url(${pictures[index]})` }}>
         <LeftArrows src={LeftArrow} alt="left-arrow" onClick={Previous} />
