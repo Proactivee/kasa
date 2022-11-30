@@ -16,10 +16,10 @@ root.render(
       <GlobalStyle />
       <Header />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route exact path="/logement/:id" element={<Logement />}></Route>
+        <Route path="/kasa" element={<Home />}></Route>
+        <Route exact path="/kasa/logement/:id" element={<Logement />}></Route>
         <Route path="*" element={<Error />}></Route>
-        <Route path="/about" element={<About />}></Route>
+        <Route path="/kasa/about" element={<About />}></Route>
       </Routes>
       <Footer />
     </Router>
