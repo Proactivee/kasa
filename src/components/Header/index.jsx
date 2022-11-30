@@ -41,8 +41,8 @@ function Header() {
     <HeaderContainer>
       <LogoImg src={logoPic} alt="logo" />
       <Navig>
-        <StyledLink to="/">Accueil</StyledLink>
-        <StyledLink to="/about"> A Propos </StyledLink>
+        <StyledLink to="/kasa">Accueil</StyledLink>
+        <StyledLink to="kasa/about"> A Propos </StyledLink>
       </Navig>
     </HeaderContainer>
   )
