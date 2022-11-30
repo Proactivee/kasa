@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/Proactivee/kasa/static/js/main.4188e700.js",
-    "static/media/img_about.png": "/Proactivee/kasa/static/media/img_about.02e1c4f7498de1cb845b.png",
-    "static/media/img_home.png": "/Proactivee/kasa/static/media/img_home.024f945a990ae17b81b7.png",
-    "index.html": "/Proactivee/kasa/index.html",
-    "main.4188e700.js.map": "/Proactivee/kasa/static/js/main.4188e700.js.map"
+    "main.js": "/kasa/static/js/main.def03841.js",
+    "static/media/img_about.png": "/kasa/static/media/img_about.02e1c4f7498de1cb845b.png",
+    "static/media/img_home.png": "/kasa/static/media/img_home.024f945a990ae17b81b7.png",
+    "index.html": "/kasa/index.html",
+    "main.def03841.js.map": "/kasa/static/js/main.def03841.js.map"
   },
   "entrypoints": [
-    "static/js/main.4188e700.js"
+    "static/js/main.def03841.js"
   ]
 }
