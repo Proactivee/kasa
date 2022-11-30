@@ -81,6 +81,7 @@ function ImageSlide({ pictures }) {
     const NextSlide = LastSlideImage ? 0 : index + 1
     setIndex(NextSlide)
   }
+
   const OnePicture = pictures.length === 1
 
   return OnePicture ? (
